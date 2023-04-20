@@ -1,0 +1,122 @@
+.wrapper{
+	width: 100%;
+	padding: 3rem;
+	display: grid;
+	grid-template-columns: 200px auto;
+	height: 100vh;
+	grid-gap: 3rem;
+}
+
+.wrapper main{
+	overflow-y: scroll;
+}
+
+.wrapper aside{
+	padding: 1rem;
+	overflow: hidden;
+	text-align: center;
+	border-radius: 20px;
+}
+
+.wrapper aside,
+.wrapper main{
+	border: 2px solid #2b2b2b;
+}
+
+.wrapper main{
+	padding: 2rem;
+}
+
+aside ul li{
+	list-style: none;
+	margin: 1rem 0;
+}
+
+aside button{
+	width: 100%;
+	padding: 1rem;
+}
+
+.pop-up-menu{
+	display: none;
+	width: 30%;
+	height: 80vh;
+	padding: 1rem;
+	background-color: white;
+	border: 3px solid var(--shade);
+	z-index: 20;
+	position: fixed;
+	top: 5vh;
+	left: 35%;
+	overflow-y: scroll;
+}
+
+.pop-up-menu input,
+.pop-up-menu select,
+.pop-up-menu textarea{
+	width: 100%;
+	margin: 1rem 0rem;
+	padding: 0.4rem 0.7rem;
+	border: 3px solid var(--shade);
+	border-radius: 4px;
+}
+
+header{
+	text-align: center;
+	margin: 1rem;
+	text-transform: uppercase;
+}
+
+/* Product List */
+#productList .list-of-products{
+	display: grid;
+	grid-template-columns: 1fr 3fr;
+	grid-gap: 3rem;
+}	
+
+#productList img{
+	max-width: 100%;
+}
+
+#productList{
+	width: 70%;
+	top: 5vh;
+	left: 15%;
+}
+
+.remove-btn{
+	padding: 0.5rem 1rem;
+	background-color: red;
+	border-radius: 4px;
+	margin: 1ren 0;
+	color: white;
+}
+
+@media (max-width: 900px){
+	.wrapper{
+		grid-template-columns: 1fr;
+		min-height: 100vh;
+	}
+	
+
+	.wrapper aside{
+	overflow: visible;
+	border-radius: 0;
+		display: block;
+		padding: 1px ;
+}
+
+.wrapper aside ul{
+	display: flex;
+	justify: center;
+	width: 100%;
+	margin: 0 auto;
+}
+
+
+	.wrapper main{
+		overflow: visible;
+		min-height: 100vh;
+	}
+	
+}
